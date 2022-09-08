@@ -10,3 +10,8 @@ Principle of operation:
 * A csv file with raw dataset has to be placed into that folder
 * Script starts to work by double clicking on it
 * After 10-15 seconds in the same folder there will appear 4 png documents with plots and graphs and 1 txt file with idling report
+### Achiemenets in programming
+By optimising the code it was able to decrease the excetution time from 5 hours to 12 seconds. Here are the solutions:
+* Introduction of functions that helped to decrease a decent amount of code;
+* In the penultimate version of the code, there was a part of enumeration of coordinates. The problem was that there are over 50k 'x' coordinates as well 'y' in each dataset. The initial idea was to form pairs of inique coordinates. To do so a loop inside a loop was created which enormously slowed down the calculation process.
+* The final version of code includes splitings rows of 'y' coordintaes into blocks based on a condition. The 'x' coordinates were grouped by a mean value regarding to each 'y' coordinate. This solution turned to be a crucial in speeding up the code execution.
